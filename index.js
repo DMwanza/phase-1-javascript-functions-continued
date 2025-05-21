@@ -27,17 +27,29 @@
 // result(adjective="a dedicated programmer")
 // console.log(`You are ${star}${adjective} ${star}`)
 
-function saturdayFun(activity="roller-skate"){
+// function saturdayFun(activity="roller-skate"){
+//     return `This Saturday, I want to ${activity}!`
+// }
+// const mondayWork=function(activity="go to the office"){
+//     return `This Monday, I will ${activity}.`
+// }
+// const wrapAdjective=function(param="*"){
+//     return function(param2="special"){
+//         return `You are ${param}${param2}${param}!`
+//     }
+
+
+
+// }
+const saturdayFun=function(activity='roller-skate'){
     return `This Saturday, I want to ${activity}!`
 }
-const mondayWork=function(activity="go to the office"){
+const mondayWork=function(activity='go to the office'){
     return `This Monday, I will ${activity}.`
 }
-const wrapAdjective=function(param="*"){
-    return function(param2="special"){
-        return `You are ${param}${param2}${param}!`
+function wrapAdjective(sign='*'){
+    return function(sign2="special"){
+        return `You are ${sign}${sign2}${sign}!`
+
     }
-
-
-
 }
